@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 22:36:22 by randre            #+#    #+#             */
-/*   Updated: 2023/10/09 22:36:22 by randre           ###   ########.fr       */
+/*   Created: 2023/10/09 22:39:26 by randre            #+#    #+#             */
+/*   Updated: 2023/10/09 22:39:26 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
 	int		i;
 	char	c;
 
+	c = '0';
 	i = 0;
-	c = 'a';
-	while (i < 26)
+	while (i < 10)
 	{
 		write(1, &c, 1);
 		i++;
