@@ -19,7 +19,7 @@ INCDIR   = ./includes/
 all: $(NAME)
 
 $(NAME): $(OBJ)
-        $(CC) $(FLAGS) -o $@ $(OBJ)
+        ar -rcs $@ $^
 
 $(OBJ): $(SRCDIR)%.o : $(SRCDIR)%.c
         $(CC) $(FLAGS) -I $(INCDIR) -c $< -o $@
