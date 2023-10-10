@@ -6,15 +6,15 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:31:02 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 12:33:34 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/10 19:56:55 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*str)

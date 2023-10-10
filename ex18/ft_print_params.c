@@ -6,15 +6,15 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:07:41 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 13:25:33 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/10 19:56:34 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*str)
@@ -30,9 +30,9 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i++ < argc - 1)

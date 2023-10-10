@@ -6,11 +6,11 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:05:54 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 18:36:03 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/10 19:57:52 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
 	while (*s1 || *s2)
 	{
@@ -20,3 +20,4 @@ int ft_strcmp(char *s1, char *s2)
 		s2++;
 	}
 	return (0);
+}

@@ -6,13 +6,13 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:04:52 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 12:07:19 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/10 19:55:58 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*str)

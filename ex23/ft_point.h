@@ -6,7 +6,7 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:49:53 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 12:55:53 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/10 19:57:13 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ typedef struct s_point
 	int	y;
 }	t_point;
 
-void set_point(t_point *point);
+void	set_point(t_point *point);
 
 #endif

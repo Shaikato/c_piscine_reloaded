@@ -6,14 +6,14 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 11:19:55 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 18:25:25 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/10 19:55:12 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_iterative_factorial(int nb)
+int	ft_iterative_factorial(int nb)
 {
-	int res;
-	int i;
+	int	res;
+	int	i;
 
 	i = 1;
 	res = 1;
