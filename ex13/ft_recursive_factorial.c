@@ -6,7 +6,7 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 11:27:24 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 11:35:40 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/10 18:25:29 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int ft_recursive_factorial(int nb)
 {
 	int res;
 
-	if (nb < 0 || nb > 31)
+	if (nb < 0 || nb > 12)
 		return (0);
 	if (nb == 0)
 		return (1);
