@@ -6,7 +6,7 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 11:34:29 by randre            #+#    #+#             */
-/*   Updated: 2023/10/12 12:04:32 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/12 12:27:01 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_sqrt(int nb)
 	{
 		result = (result + num / result) / 2;
 	}
-	if (result == 0)
+	if ((int)result == 0)
 		return (0);
 	if (nb % (int)result == 0)
 		return (result);
