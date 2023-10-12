@@ -6,11 +6,11 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:07:41 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 19:56:34 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/12 10:57:09 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 int	ft_strlen(char *str)
 {
@@ -23,11 +23,6 @@ int	ft_strlen(char *str)
 		i++;
 	}
 	return (i);
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
 }
 
 int	main(int argc, char **argv)

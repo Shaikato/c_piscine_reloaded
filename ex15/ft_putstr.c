@@ -6,16 +6,13 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:02:31 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 19:57:45 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/12 12:07:11 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {

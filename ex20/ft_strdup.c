@@ -6,7 +6,7 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:31:02 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 19:56:55 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/12 12:06:29 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,23 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-char	*fr_strdup(char *src)
+char	*ft_strdup(char *src)
 {
 	char	*str;
+	char	*start;
 
+	if (!src)
+		return (0);
 	str = malloc(sizeof(char) * (ft_strlen(src) + 1));
+	if (!str)
+		return (0);
+	start = str;
 	while (*src)
 	{
 		*str = *src;
 		src++;
 		str++;
 	}
-	*str = '0';
-	return (str);
+	*str = 0;
+	return (start);
 }

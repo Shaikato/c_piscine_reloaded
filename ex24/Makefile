@@ -10,25 +10,25 @@ CC    = cc
 
 FLAGS   = -Wall -Wextra -Werror
 
-OBJ    = $(addprefix $(SRCDIR), $(SRCS:.c=.o))
+OBJ    = $(SRCS:.c=.o)
 
 SRCDIR   = ./srcs/
 
 INCDIR   = ./includes/
 
+$(OBJ): $(SRCDIR)%.o : $(SRCDIR)%.c
+		$(CC) $(FLAGS) -I $(INCDIR) -c $< -o $@
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
-        ar -rcs $@ $^
-
-$(OBJ): $(SRCDIR)%.o : $(SRCDIR)%.c
-        $(CC) $(FLAGS) -I $(INCDIR) -c $< -o $@
+		ar -rcs $@ $^
 
 clean:
-        rm -rf $(OBJ)
+		rm -rf $(OBJ)
 
 fclean: clean
-        rm -rf $(NAME)
+		rm -rf $(NAME)
 
 re: fclean all
 

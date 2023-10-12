@@ -6,11 +6,11 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 22:39:26 by randre            #+#    #+#             */
-/*   Updated: 2023/10/09 22:39:26 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/12 10:56:45 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_print_numbers(void)
 {
@@ -21,7 +21,7 @@ void	ft_print_numbers(void)
 	i = 0;
 	while (i < 10)
 	{
-		write(1, &c, 1);
+		ft_putchar(c);
 		i++;
 		c++;
 	}

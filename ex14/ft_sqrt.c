@@ -6,26 +6,33 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 11:34:29 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 19:55:34 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/12 12:04:32 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+int	ft_abs(int nb)
+{
+	if (nb < 0)
+		nb = -nb;
+	return (nb);
+}
 
 int	ft_sqrt(int nb)
 {
-	long	i;
-	long	nbl;
+	double	num;
+	double	result;
+	double	range;
 
-	nbl = nb;
-	i = (nb / 2) - 1;
-	if (nb <= 0)
+	result = 1;
+	num = nb;
+	range = num * 0.0001;
+	while (ft_abs(result * result - num) > range)
+	{
+		result = (result + num / result) / 2;
+	}
+	if (result == 0)
 		return (0);
-	if (nb == 1)
-		return (1);
-	while (i * i != nbl && i * i > nbl / 2)
-		i--;
-	if (i * i <= nbl / 2)
-		return (0);
-	return (i);
+	if (nb % (int)result == 0)
+		return (result);
+	return (0);
 }

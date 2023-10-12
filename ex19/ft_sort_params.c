@@ -6,11 +6,11 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:13:50 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 19:56:43 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/12 10:58:53 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 int	str_len(char *str)
 {
@@ -70,8 +70,12 @@ int	main(int argc, char	*argv[])
 	ft_sort_params(argc, argv);
 	while (i < argc)
 	{
-		write(1, argv[i], str_len(argv[i]));
-		write(1, "\n", 1);
+		while (*argv[i])
+		{
+			ft_putchar(*argv[i]);
+			argv[i]++;
+		}
+		ft_putchar('\n');
 		i++;
 	}
 	return (0);

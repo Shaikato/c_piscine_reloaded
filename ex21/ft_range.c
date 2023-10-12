@@ -6,7 +6,7 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:34:06 by randre            #+#    #+#             */
-/*   Updated: 2023/10/10 12:43:27 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/12 11:07:09 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,11 @@ int	*ft_range(int min, int max)
 	int	*start;
 
 	i = min;
+	if (min >= max)
+		return (0);
 	tab = malloc(sizeof(int) * (max - min));
+	if (!tab)
+		return (0);
 	start = tab;
 	while (i < max)
 	{

@@ -6,11 +6,11 @@
 /*   By: randre <randre@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 22:36:22 by randre            #+#    #+#             */
-/*   Updated: 2023/10/09 22:36:22 by randre           ###   ########.fr       */
+/*   Updated: 2023/10/12 10:56:50 by randre           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_print_alphabet(void)
 {
@@ -21,7 +21,7 @@ void	ft_print_alphabet(void)
 	c = 'a';
 	while (i < 26)
 	{
-		write(1, &c, 1);
+		ft_putchar(c);
 		i++;
 		c++;
 	}
